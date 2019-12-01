@@ -1,0 +1,23 @@
+digraph LikelyTypes {
+    rankdir = "LR"
+    node [fontname=Sans]
+
+    subgraph cluster_notes {
+        node [shape = record, fillcolor=yellow, style=filled];
+        function_10__loc [label = "originated at _inconsistent_callgraph.js:18:5:20:6_"];
+        array_25__loc [label = "originated at _inconsistent_callgraph.js:16:8:16:10_"];
+    }
+    node [shape = Mrecord, fillcolor=lightpink, style=filled];
+    function_10_ [label = "<function_10_>function\ fc2|<return>return|<this>this"];
+    node [shape = Mrecord, fillcolor=lightskyblue, style=filled];
+    number [label = "<number>number"];
+    boolean [label = "<boolean>boolean"];
+    string [label = "<string>string"];
+    undefined [label = "<undefined>undefined"];
+    null [label = "<null>null"];
+    array_25_ [label = "<array_25_>array\ Array"];
+    function_10_:return -> number:number;
+    function_10_:return -> array_25_:array_25_;
+    function_10_:function_10_ -> function_10__loc;
+    array_25_:array_25_ -> array_25__loc;
+}

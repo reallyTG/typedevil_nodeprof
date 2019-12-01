@@ -1,0 +1,35 @@
+digraph LikelyTypes {
+    rankdir = "LR"
+    node [fontname=Sans]
+
+    subgraph cluster_notes {
+        node [shape = record, fillcolor=yellow, style=filled];
+        object_10__loc [label = "originated at _consistent_cloned_object.js:38:21:38:28_"];
+        object_17__loc [label = "originated at _consistent_cloned_object.js:24:21:24:23_"];
+        object_38__loc [label = "originated at _consistent_cloned_object.js:42:21:42:30_"];
+        frame_7__loc [label = "originated at _consistent_cloned_object.js:23:5:28:6_"];
+    }
+    node [shape = Mrecord, fillcolor=lightpink, style=filled];
+    frame_7_ [label = "<frame_7_>frame\ |<object>object|<clone>clone|<key>key|<this>this"];
+    node [shape = Mrecord, fillcolor=lightskyblue, style=filled];
+    number [label = "<number>number"];
+    boolean [label = "<boolean>boolean"];
+    string [label = "<string>string"];
+    undefined [label = "<undefined>undefined"];
+    null [label = "<null>null"];
+    object_10_ [label = "<object_10_>object\ Object|<a>a"];
+    object_17_ [label = "<object_17_>object\ Object|<a>a"];
+    object_38_ [label = "<object_38_>object\ Object|<a>a"];
+    object_10_:a -> number:number;
+    object_17_:a -> number:number;
+    object_17_:a -> boolean:boolean;
+    object_38_:a -> boolean:boolean;
+    frame_7_:object -> object_10_:object_10_;
+    frame_7_:object -> object_38_:object_38_;
+    frame_7_:clone -> object_17_:object_17_;
+    frame_7_:key -> string:string;
+    object_10_:object_10_ -> object_10__loc;
+    object_17_:object_17_ -> object_17__loc;
+    object_38_:object_38_ -> object_38__loc;
+    frame_7_:frame_7_ -> frame_7__loc;
+}

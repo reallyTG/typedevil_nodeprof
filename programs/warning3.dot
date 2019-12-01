@@ -1,0 +1,20 @@
+digraph LikelyTypes {
+    rankdir = "LR"
+    node [fontname=Sans]
+
+    subgraph cluster_notes {
+        node [shape = record, fillcolor=yellow, style=filled];
+        object_17__loc [label = "originated at _consistent_cloned_object.js:24:21:24:23_"];
+    }
+    node [shape = Mrecord, fillcolor=lightpink, style=filled];
+    object_17_ [label = "<object_17_>object\ Object|<a>a"];
+    node [shape = Mrecord, fillcolor=lightskyblue, style=filled];
+    number [label = "<number>number"];
+    boolean [label = "<boolean>boolean"];
+    string [label = "<string>string"];
+    undefined [label = "<undefined>undefined"];
+    null [label = "<null>null"];
+    object_17_:a -> number:number;
+    object_17_:a -> boolean:boolean;
+    object_17_:object_17_ -> object_17__loc;
+}

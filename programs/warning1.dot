@@ -1,0 +1,22 @@
+digraph LikelyTypes {
+    rankdir = "LR"
+    node [fontname=Sans]
+
+    subgraph cluster_notes {
+        node [shape = record, fillcolor=yellow, style=filled];
+        frame_4__loc [label = "originated at _inconsistent_frame.js:2:1:7:2_"];
+    }
+    node [shape = Mrecord, fillcolor=lightpink, style=filled];
+    frame_4_ [label = "<frame_4_>frame\ |<i>i|<x>x|<y>y|<this>this"];
+    node [shape = Mrecord, fillcolor=lightskyblue, style=filled];
+    number [label = "<number>number"];
+    boolean [label = "<boolean>boolean"];
+    string [label = "<string>string"];
+    undefined [label = "<undefined>undefined"];
+    null [label = "<null>null"];
+    frame_4_:i -> number:number;
+    frame_4_:x -> number:number;
+    frame_4_:y -> number:number;
+    frame_4_:y -> string:string;
+    frame_4_:frame_4_ -> frame_4__loc;
+}
