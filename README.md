@@ -3,5 +3,9 @@ TYPEDEVIL on NODEPROF
 
 Usage:
 
-... TODO
+first run `./docker-build.sh`
+
+then try `./typedevil-docker-run.sh inconsistent_frame.js`
+
+
 
