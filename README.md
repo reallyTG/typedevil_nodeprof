@@ -7,7 +7,7 @@ This is a working implementation of the TypeDevil dynamic analysis by Pradel et 
 
 For convenience, NodeProf is wrapped in a Docker image, so you'll need to install Docker.
 
-To build the image: from the repo directory, run `./docker-build`, and wait a while. This will set up a `nodeprof` docker image in your machine.
+To build the image: from the repo directory, run `./docker-build.sh`, and wait a while. This will set up a `nodeprof` docker image in your machine.
 
 You don't need to be in a Docker instance to run the analysis. Instead, we have included two runner scripts which spin up the image, analyze a file, and report results, without you needing to interact with the image.
 
@@ -25,7 +25,7 @@ We plan to improve upon TypeDevil-on-NodeProf in a few ways, outlined in the rep
 
 The first order of business will be configuring the Docker image with the prerequisites to run more of the original TypeDevil functionality.
 
-**Link to progress report:** *https://docs.google.com/document/d/152JLIvyva_3SU87qXn125YVgKGIZJdRYSdccNWwvK7c/edit?usp=sharing*
+**Link to progress report: ** *https://docs.google.com/document/d/152JLIvyva_3SU87qXn125YVgKGIZJdRYSdccNWwvK7c/edit?usp=sharing*
 
 ### References
 
