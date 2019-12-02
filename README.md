@@ -25,7 +25,7 @@ We plan to improve upon TypeDevil-on-NodeProf in a few ways, outlined in the rep
 
 The first order of business will be configuring the Docker image with the prerequisites to run more of the original TypeDevil functionality.
 
-**Link to progress report: ** *https://docs.google.com/document/d/152JLIvyva_3SU87qXn125YVgKGIZJdRYSdccNWwvK7c/edit?usp=sharing*
+**Link to progress report:** *https://docs.google.com/document/d/152JLIvyva_3SU87qXn125YVgKGIZJdRYSdccNWwvK7c/edit?usp=sharing*
 
 ### References
 
